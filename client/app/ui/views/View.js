@@ -5,4 +5,7 @@ class View{
     update(model){
         this._elemento.innerHTML = this.template(model);
     }
+    template(){
+        throw new Error('O método template precisa ser implementado');
+    }
 }
